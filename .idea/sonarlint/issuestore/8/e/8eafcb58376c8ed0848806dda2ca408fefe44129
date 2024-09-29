@@ -1,0 +1,11 @@
+
+–
+java:S2095*"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(Νεύÿÿÿÿ8Ϊ¶¬λ£2J$93824b17-fd31-43d7-b3ea-6bbeacea6595
+
+java:S2095$"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(§ΥΓ½8Ω¶¬λ£2J$7926546a-6fec-45a9-b469-4945c95a5dca
+v
+java:S1118":Add a private constructor to hide the implicit public one.(”Π³¬J$fe592783-fda9-4119-8ec7-afc980f56a72
+]
+java:S5542!"Use a secure padding scheme.(ΥΜΖωÿÿÿÿJ$0d594e31-a38a-4abc-8ef3-6a18b418ccc2
+‹
+java:S2674&"JCheck the return value of the "read" call to see how many bytes were read.(ητ‚ώÿÿÿÿJ$41828cb3-d77b-4331-811e-5fe564f8c151

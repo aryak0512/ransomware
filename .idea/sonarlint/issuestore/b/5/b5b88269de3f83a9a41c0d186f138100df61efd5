@@ -1,0 +1,12 @@
+
+	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Â¼œì£2J$0b315774-1628-4d67-b3e3-90d0e9cf2e0c
+	java:S112f"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Â¼œì£2J$dc958f1f-be02-441d-b7fa-65d3416b1811
+~	java:S125'"<This block of commented-out lines of code should be removed.(Å¦Œâ8Ì¼œì£2J$68f62495-f5d8-45e4-beac-52fcdd409c6b
+‚	java:S899/";Do something with the "boolean" value returned by "delete".(²Œ­ûÿÿÿÿ8Î¼œì£2J$947bbf12-c9b4-4d53-9b9e-9eb6ca7a3fc0
+–
+java:S4042/"NUse "java.nio.file.Files#delete" here for better messages on error conditions.(²Œ­ûÿÿÿÿ8Î¼œì£2J$ca2198f3-d2e6-4081-90e0-79080b98ef20
+‚	java:S899B";Do something with the "boolean" value returned by "delete".(²Œ­ûÿÿÿÿ8•ô­ì£2J$e6f15c90-5ccb-4971-a5e4-fe200c6932e8
+–
+java:S4042B"NUse "java.nio.file.Files#delete" here for better messages on error conditions.(²Œ­ûÿÿÿÿ8•ô­ì£2J$b6186361-b826-4b15-8199-5988195ea05e
+«
+java:S1130["hRemove the declaration of thrown exception 'CryptoException', as it cannot be thrown from method's body.(¢à°¡8Ğ¼œì£2J$7db1d874-a968-4f9e-9fb4-2eeaf8e2c443

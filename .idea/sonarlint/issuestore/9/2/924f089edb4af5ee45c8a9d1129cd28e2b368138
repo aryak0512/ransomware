@@ -1,0 +1,7 @@
+
+r	java:S106"+Replace this use of System.out by a logger.(˜ã£¡ûÿÿÿÿ8¬İ×ë£2J$86e399ff-494c-49fc-a30d-36cd915da03b
+‚	java:S899&";Do something with the "boolean" value returned by "delete".(²Œ­ûÿÿÿÿ8¯İ×ë£2J$63bccb5b-f6df-4d9e-b761-049d5b8be949
+–
+java:S4042&"NUse "java.nio.file.Files#delete" here for better messages on error conditions.(²Œ­ûÿÿÿÿ8¯İ×ë£2J$acecef46-0800-441b-9ee5-6a169c96f217
+„
+java:S1075/"ARefactor your code to get this URI from a customizable parameter.(®Üïı8°İ×ë£2J$cf4d82ca-09cc-4da7-bd0e-07210098de56

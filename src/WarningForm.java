@@ -55,7 +55,7 @@ public class WarningForm extends JFrame {
             String inputText = textField.getText();
             if ( !inputText.isEmpty() ) {
 
-                if ( inputText.equals("123") ) {
+                if ( inputText.equals(Constants.SECRET_KEY) ) {
 
                     try {
                         // invoke decryption function

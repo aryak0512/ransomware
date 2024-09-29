@@ -49,6 +49,7 @@ public class WarningForm extends JFrame {
         gbc.gridy = 3; // Move to row 2
         add(submitButton, gbc);
 
+
         // Add action listener to the button
         submitButton.addActionListener(e -> {
 
@@ -71,10 +72,10 @@ public class WarningForm extends JFrame {
 
                     attempts++;
                     if ( attempts >= MAX_ATTEMPTS ) {
-                        JOptionPane.showMessageDialog(null, "Attempts exceeded!");
+                        JOptionPane.showMessageDialog(null, "Attempts exceeded!", "WARNING", JOptionPane.WARNING_MESSAGE);
                         System.exit(0);
                     } else {
-                        JOptionPane.showMessageDialog(null, "Incorrect key - Pls be careful : " + (MAX_ATTEMPTS - attempts) + " more attempts remaining!");
+                        JOptionPane.showMessageDialog(null, "Incorrect key - Pls be careful : " + (MAX_ATTEMPTS - attempts) + " more attempts remaining!","INCORRECT ATTEMPT", JOptionPane.WARNING_MESSAGE);
                     }
                 }
             } else {
@@ -82,6 +83,4 @@ public class WarningForm extends JFrame {
             }
         });
     }
-
-
 }

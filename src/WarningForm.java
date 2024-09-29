@@ -10,14 +10,14 @@ public class WarningForm extends JFrame {
     public WarningForm() {
         // Set up the frame
         setTitle("Aryak's Ransomware");
-        setSize(600, 450);
+        setSize(700, 550);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new GridBagLayout());
         GridBagConstraints gbc = new GridBagConstraints();
 
         // Load and resize the image
         ImageIcon originalIcon = new ImageIcon("img/ransomware.jpeg"); // Specify the path to your image
-        Image resizedImage = originalIcon.getImage().getScaledInstance(400, 200, Image.SCALE_SMOOTH); // Resize the image
+        Image resizedImage = originalIcon.getImage().getScaledInstance(600, 300, Image.SCALE_SMOOTH); // Resize the image
         ImageIcon resizedIcon = new ImageIcon(resizedImage);
         JLabel imageLabel = new JLabel(resizedIcon);
 

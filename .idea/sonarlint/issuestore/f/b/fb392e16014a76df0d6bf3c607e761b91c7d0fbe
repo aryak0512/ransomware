@@ -1,7 +1,7 @@
 
-	java:S112@"FDefine and throw a dedicated exception instead of using a generic one.(ผÿพนÿÿÿÿÿ8ม๚เ๋ฃ2J$788b3c7b-9e3f-416a-90bc-01a2f4f04098
+	java:S112@"FDefine and throw a dedicated exception instead of using a generic one.(ผÿพนÿÿÿÿÿ8ม๚เ๋ฃ2J$188d8e7e-d652-4287-b304-e262c5deb4dd
 
 java:S3776
-"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(þวÿÿÿÿÿ8ึ๚เ๋ฃ2J$2832d0a9-c663-48f6-9bae-094f01bd91c7
+"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(þวÿÿÿÿÿ8ึ๚เ๋ฃ2J$ef9b09ef-6be6-4ce1-98f4-7e6a72f43ece
 ‘
-java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(ี๛ป๖þÿÿÿÿ8ัจ๋ฃ2J$185401a7-a90e-4503-9117-9cd6e763bb07
+java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(ี๛ป๖þÿÿÿÿ8ัจ๋ฃ2J$c8fc30f6-7a22-455b-bf1d-070326862b58

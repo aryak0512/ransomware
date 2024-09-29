@@ -1,12 +1,13 @@
 
-	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Â¼œì£2J$0b315774-1628-4d67-b3e3-90d0e9cf2e0c
-	java:S112f"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Â¼œì£2J$dc958f1f-be02-441d-b7fa-65d3416b1811
-~	java:S125'"<This block of commented-out lines of code should be removed.(Å¦Œâ8Ì¼œì£2J$68f62495-f5d8-45e4-beac-52fcdd409c6b
-‚	java:S899/";Do something with the "boolean" value returned by "delete".(²Œ­ûÿÿÿÿ8Î¼œì£2J$947bbf12-c9b4-4d53-9b9e-9eb6ca7a3fc0
+	java:S112/"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8›¥ñ£2J$af522e38-3a58-47db-8d7f-25f1a9028d93
+	java:S112{"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8›¥ñ£2J$9e71b597-ed98-42e2-b1e9-ecbc562ad893
+m	java:S106"+Replace this use of System.out by a logger.(ºØ8œÊ—ñ£2J$7dcd82b9-9716-4a3b-83bc-c9b74d664878
+~	java:S125;"<This block of commented-out lines of code should be removed.(Å¦Œâ8ª¥ñ£2J$2fd1295d-721a-467f-8598-93b5474bea93
+‚	java:S899C";Do something with the "boolean" value returned by "delete".(²Œ­ûÿÿÿÿ8¬¥ñ£2J$147f6b29-3ba3-4980-bf08-cff3cc0ec42f
 –
-java:S4042/"NUse "java.nio.file.Files#delete" here for better messages on error conditions.(²Œ­ûÿÿÿÿ8Î¼œì£2J$ca2198f3-d2e6-4081-90e0-79080b98ef20
-‚	java:S899B";Do something with the "boolean" value returned by "delete".(²Œ­ûÿÿÿÿ8•ô­ì£2J$e6f15c90-5ccb-4971-a5e4-fe200c6932e8
+java:S4042C"NUse "java.nio.file.Files#delete" here for better messages on error conditions.(²Œ­ûÿÿÿÿ8­¥ñ£2J$1f043c3c-56e4-46ec-b684-94eb1061b256
+‚	java:S899W";Do something with the "boolean" value returned by "delete".(²Œ­ûÿÿÿÿ8®¥ñ£2J$098e80b2-5dae-4071-adaa-898eacc039a0
 –
-java:S4042B"NUse "java.nio.file.Files#delete" here for better messages on error conditions.(²Œ­ûÿÿÿÿ8•ô­ì£2J$b6186361-b826-4b15-8199-5988195ea05e
+java:S4042W"NUse "java.nio.file.Files#delete" here for better messages on error conditions.(²Œ­ûÿÿÿÿ8®¥ñ£2J$40249667-8031-4c57-9c23-0f0904f70a03
 «
-java:S1130["hRemove the declaration of thrown exception 'CryptoException', as it cannot be thrown from method's body.(¢à°¡8Ğ¼œì£2J$7db1d874-a968-4f9e-9fb4-2eeaf8e2c443
+java:S1130p"hRemove the declaration of thrown exception 'CryptoException', as it cannot be thrown from method's body.(¢à°¡8°¥ñ£2J$d55ece4f-5832-4fdb-b729-47aae6835a75

